@@ -2,7 +2,7 @@ import { blog_data, assets } from "@/Assets/assets"
 import Image from "next/image";
 const Blogitem = ({image,title,description,category}) => {
     return (
-        <div className=" items-center border-2 border-black-500 mt-20 max-w-[300px] md:max-w-[300px] ml-5 mb-5">
+        <div className=" items-center border-2 border-black-500 mt-15 max-w-[300px] md:max-w-[300px] ml-5 mb-5 transition-shadow duration-300 hover:shadow-[-7px_7px_0px_black]">
             <Image src={image} alt="working on laptop" width={300} className=" fit-content" />
             <p className="bg-black text-white inline-block px-1 ml-3 mt-2 py-[0.15rem] text-[0.8rem]">{category}</p>
             <h3 className="max-w-[280px] ml-3 mt-2 font-medium justify-center">{title}</h3>
