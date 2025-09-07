@@ -1,12 +1,14 @@
 import React from 'react'
 import Image from "next/image";
 import { assets } from '@/Assets/assets';
-
+import Link from "next/link";
 const Navbar = () => {
     return (
         <>
             <nav className='flex py-3 px-2 md:px-12 md:py-3 lg:py-3  lg:px-28 items-center justify-between '>
+               
                 <Image src={assets.logo} width={170} />
+              
                 <div className='flex md:ml-8'>
                     <button className='flex flex-row ml-5 md:px-5 md:py-3 border-2 items-center gap-2 md:mt-2 px-2 py-1 shadow-[-7px_7px_0px_#000000] text-xs md:text-base'>Get started <Image src={assets.arrow} className='flex items-center md:text-xs md:w-4 w-3' /></button>
                 </div>

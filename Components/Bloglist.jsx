@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { blog_data, assets } from "@/Assets/assets"
 import Blogitem from './Blogitem'
-import Image from "next/image";
 const Bloglist = () => {
     const [data, setData] = useState("All")
     return (
@@ -14,7 +13,7 @@ const Bloglist = () => {
             </div>
             <div className="flex flex-wrap justify-around ">
                 {blog_data.filter((item) => data === "All" ? true : item.category === data).map((item, index) => {
-                    return <Blogitem key={index} image={item.image} category={item.category} title={item.title} description={item.description} />
+                    return <Blogitem key={index} id={item.id} image={item.image} category={item.category} title={item.title} description={item.description} />
                 })}
             </div>
         </>
