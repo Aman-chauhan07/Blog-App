@@ -9,19 +9,17 @@ import Link from "next/link";
 const Page = ({ params }) => {
   const [data, setData] = useState(null);
 
-  const Fetchblogdata = () => {
-    for (let i = 0; i < blog_data.length; i++) {
-      if (Number(params.id) === blog_data[i].id) {
-        setData(blog_data[i]);
-        console.log(blog_data[i]);
-        break;
-      }
-    }
-  };
+const Fetchblogdata = () => {
+  const blog = blog_data.find((item) => item.id === Number(params.id));
+  if (blog) {
+    setData(blog);
+  }
+};
 
-  useEffect(() => {
-    Fetchblogdata();
-  }, []);
+useEffect(() => {
+  Fetchblogdata();
+}, []);
+
 
   return data ? (
     <>
@@ -113,7 +111,7 @@ const Page = ({ params }) => {
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            anim id est laborum.Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida.
           </p>
 
           <p className="mt-5 font-bold md:ml-0 ml-3">

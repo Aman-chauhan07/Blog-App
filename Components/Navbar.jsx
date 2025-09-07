@@ -14,7 +14,7 @@ const Navbar = () => {
                 </div>
             </nav>
             <div className='flex text-center justify-center flex-col '>
-                <h1 className='text-2xl font-medium md:text-5xl'>Latest Blogs</h1>
+                <h1 className='text-3xl font-medium md:text-5xl'>Latest Blogs</h1>
                 <p className='max-w-[740px] mt-3 mx-auto text-xs sm:text-base   item-centre justify-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quidem corrupti consequuntur magni voluptates optio laudantium officia libero illo quaerat!</p>
             </div>
             <form className='item-centre justify-center flex mx-auto max-w-[500px]'>
