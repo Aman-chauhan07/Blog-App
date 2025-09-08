@@ -8,7 +8,7 @@ const Sidebar = () => {
       <div className='sm:pl-14 py-3 pl-1 border-2 border-grey-500 px-2 '>
         <Image src={assets.logo} width={120} />
       </div>
-      <div className='   md:w-80 w-40 pr-3 border py-12  h-[100vh] border-black relative ' >
+      <div className='   md:w-80 w-40 pr-3 border py-12  h-[91.46vh] border-black relative ' >
         <div className='w-[60%] md:w-[80%] absolute right-0 '>
           <div className='items-center flex  gap-3 mt-3 shadow-[-7px_7px_0px_#000000]  border-black border-1 bg-white  font-medium  py-2 px-1'>
             <Image src={assets.add_icon} width={28} /><p >Add Blogs</p>
